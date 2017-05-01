@@ -41,6 +41,8 @@ void line_counting()
 
     nl = 0;
     /* counts new line, tabs, and spaces */
-    while ((c = getchar()) != EOF) if ( c == '\n'|| c == '\t' || c == ' ' ) ++nl;
+    while ((c = getchar()) != EOF)
+        if ( c == '\n'|| c == '\t' || c == ' ' )
+            ++nl;
     printf("\nThere are %d spaces, tabs, and newlines from the input\n", nl);
 }
